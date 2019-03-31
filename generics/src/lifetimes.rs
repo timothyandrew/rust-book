@@ -1,3 +1,8 @@
+#[derive(Debug)]
+struct ImportantExcerpt<'a> {
+    part: &'a str,
+}
+
 fn longest<'a>(s1: &'a str, s2: &'a str) -> &'a str {
     if s1.len() > s2.len() {
         s1
@@ -16,10 +21,14 @@ pub fn main() {
     }
 
     let string1 = String::from("long string is long");
-    let result;
-    {
-        let string2 = String::from("xyz");
-        result = longest(string1.as_str(), string2.as_str());
-    }
+    let string2 = String::from("xyz");
+    let result = longest(string1.as_str(), string2.as_str());
     println!("The longest string is {}", result);
+
+    let s = String::from("fop");
+    let excerpt = ImportantExcerpt { part: &s[..] };
+    {
+        println!("String is: {}", s);
+    }
+    println!("Excerpt is: {:?}", excerpt);
 }
