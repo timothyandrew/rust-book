@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"path": "collections"
+		},
+		{
+			"path": "enums"
+		},
+		{
+			"path": "errors"
+		},
+		{
+			"path": "functions"
+		},
+		{
+			"path": "generics"
+		},
+		{
+			"path": "guessing_game"
+		},
+		{
+			"path": "hello_cargo"
+		},
+		{
+			"path": "hello_world"
+		},
+		{
+			"path": "modules"
+		},
+		{
+			"path": "rect"
+		},
+		{
+			"path": "structs"
+		},
+		{
+			"path": "variables"
+		}
+	],
+	"settings": {}
+}
